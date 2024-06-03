@@ -1,0 +1,892 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./output.css" rel="stylesheet">
+    <title>McDelivery</title>
+</head>
+<body class="bg-amber-50">
+
+    <!--1.NAVBAR SECTION-->
+    <nav class="bg-white fixed top-0  insert-0 z-10 h-24 w-full shadow-xl flex justify-evenly items-center 2xl:h-32">
+        <!--MCDELIVER LOGO-->
+        <img src="../images/McDeliveryLogo.png" alt="mcdeliverylogo" class="h-3/4">
+        <!--MCDELIVERY BUTTON-->
+        <a href="#" class="bg-red-600 h-3/4 w-40 flex items-center rounded-xl justify-evenly 2xl:w-60">
+            <img src="../images/scooty.svg" alt="scooty">
+            <p class="text-white text-md font-bold font-mono 2xl:text-2xl">McDelivery</p>
+            <img src="../images/arrow.svg" alt="arrow">
+        </a>
+        <!--LOCATION BUTTON-->
+        <a href="#" class="bg-white h-3/4 w-80 shadow-xl rounded-xl flex justify-evenly items-center max-xl:hidden 2xl:w-96">
+            <div class=" h-16 w-50 flex flex-col items-start justify-start">
+                <div class="h-16 w-50 flex justify-start items-start">
+                    <img src="../images/m.png" alt="m" class="h-4 w-4 my-2">
+                    <p class="font-sans mx-2 2xl:text-xl"><span class="font-bold">Bandra</span>, Bandra(W) Linkin...</p>
+                    <img src="../images/black_arrow.svg" alt="black arrow" class="my-2">
+                </div>
+                <p class="mb-6 2xl:text-xl">Please enter your location so we c...</p>
+            </div>
+            <div class="fle flex-col">
+                <img src="../images/time.svg" alt="time" class="mx-2">
+                <p class="2xl:text-xl">Now</p>
+            </div>
+        </a>
+        <!--DROPDOWN MENU THREE DOTS-->
+        <div class="flex-none md:hidden">
+            <button class="btn btn-square btn-ghost">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-5 h-5 stroke-current"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z"></path></svg>
+            </button>
+        </div>
+        <!--LINE-->
+        <svg height="35" width="1" xmlns="http://www.w3.org/2000/svg" class="max-lg:hidden">
+            <line x1="0" y1="0" x2="0" y2="200" style="stroke:black;stroke-width:14" />
+        </svg>
+        <!--OFFERS-->
+        <a href="#" class="font-bold max-md:hidden 2xl:text-2xl">Offers</a>
+        <!--RESTAURANTS NEARBY-->
+        <a href="#" class="font-bold max-md:hidden 2xl:text-2xl">Restaurants NearBy</a>
+        <!--NAVIMAGE-->
+        <a href="#"><img src="../images/navimage.png" alt="navimage" class="h-14 max-md:hidden"></a>
+        <!--MAN SVG-->
+        <img src="../images/man.svg" alt="man" class="h-6 max-md:hidden 2xl:h-10">
+        <!--SEARCH SVG-->
+        <img src="../images/search.svg" alt="man" class="h-6 max-md:hidden 2xl:h-10">
+    </nav>
+
+    <!--2.UPPER SECTION WITH RELATIVE-->
+    <div class="relative top-24">
+        <!--YELLOW LINE-->
+        <div class="bg-yellow-500 h-5 w-full"></div>
+        <!--BANNER-->
+        <a href="#"><img src="../images/below_nav.jpeg" alt="banner" class="h-60 w-full max-sm:h-32 2xl:h-96"></a>
+        <!--OUR MENU TAOTAL-->
+        <div class="bg-amber-50 h-48 w-full shadow-xl flex justify-center px-2 md:px-7 2xl:px-36">
+            <!--OUR MENU INNER-->
+            <div class="bg-amber-50 w-full flex flex-col justify-evenly">
+                <p class="text-5xl font-bold max-sm:text-xl">Our Menu</p>
+                <!--BUTTONS-->
+                <div class="flex justify-between max-sm:flex-col max-sm:space-y-8">
+                    <div class="flex space-x-5">
+                        <button class="flex shadow-xl rounded-full justify-evenly w-28 h-12 items-center hover:bg-red-600 hover:text-white max-sm:w-20 max-sm:h-7">
+                            <img src="../images/popular.svg" alt="">
+                            <p class="text-lg font-semibold max-sm:text-sm">Popular</p>
+                        </button>
+                        <button class="flex shadow-xl rounded-full justify-evenly w-28 h-12 items-center hover:bg-red-600 hover:text-white max-sm:w-20 max-sm:h-7">
+                            <img src="../images/deals.svg" alt="">
+                            <p class="text-lg font-semibold max-sm:text-sm">Deals</p>
+                        </button>
+                        <button class="flex shadow-xl rounded-full justify-evenly w-36 h-12 items-center hover:bg-red-600 hover:text-white max-sm:w-28 max-sm:h-7">
+                            <img src="../images/newlaunch.svg" alt="">
+                            <p class="text-lg font-semibold max-sm:text-sm">New Launch</p>
+                        </button>
+                    </div>
+                    <!--SEARCH BAR-->
+                    <input type="text" placeholder="Search here" class="w-52 h-16shadow-xl rounded-full py-5 px-5 border-black-200 border-2 max-sm:h-7 2xl:w-96">
+                </div>
+            </div>
+        </div>
+        <!--MIDDLE IMAGES WITH ABSOLUTE-->
+        <div class="absolute flex items-center max-sm:top-32 left-1/4 md:top-52 lg:left-1/3 2xl:top-80">
+            <img src="../images/below1.png" alt="middle img -1" class="rounded-xl border-white border-2 max-sm:h-10 2xl:h-40">
+            <img src="../images/below2.png" alt="middle img -2" class="rounded-xl border-white border-2 h-20 max-sm:h-8 2xl:h-32">
+            <img src="../images/below3.png" alt="middle img -3" class="rounded-xl border-white border-2 h-20 max-sm:h-8 2xl:h-32">
+        </div>
+    </div>
+    
+    <!--3.MIDDLE SECTION-->
+    <!--FOR MOBILE SECTION ORDER-->
+    <div class="sm:hidden">
+        <div class="bg-white h-32 w-full shadow-xl mt-[100px] flex flex-col items-center justify-center py-3 px-3">
+            <div class="flex justify-evely w-full h-1/2">
+                <button class="w-20 h-12 hover:border-yellow-400 border-b-4 px-2">
+                    <img src="../images/gbutton1.png" class="bg-slate-200 rounded-full hover:bg-orange-200 w-10 h-10">
+                </button>
+                <button class="w-20 h-12 hover:border-yellow-400 border-b-4 px-2">
+                    <img src="../images/gbutton2.png" class="bg-slate-200 rounded-full hover:bg-orange-200 w-10 h-10">
+                </button>
+                <button class="w-20 h-12 hover:border-yellow-400 border-b-4 px-2">
+                    <img src="../images/gbutton3.png" class="bg-slate-200 rounded-full hover:bg-orange-200 w-10 h-10">
+                </button>
+                <button class="w-20 h-12 hover:border-yellow-400 border-b-4 px-2">
+                    <img src="../images/gbutton4.png" class="bg-slate-200 rounded-full hover:bg-orange-200 w-10 h-10">
+                </button>
+                <button class="w-20 h-12 hover:border-yellow-400 border-b-4 px-2">
+                    <img src="../images/gbutton5.png" class="bg-slate-200 rounded-full hover:bg-orange-200 w-10 h-10">
+                </button>
+            </div>
+            <div class="flex justify-evely w-full h-1/2">
+                <button class="w-20 h-12 hover:border-yellow-400 border-b-4 px-2">
+                    <img src="../images/gbutton6.png" class="bg-slate-200 rounded-full hover:bg-orange-200 w-10 h-10">
+                </button>
+                <button class="w-20 h-12 hover:border-yellow-400 border-b-4 px-2">
+                    <img src="../images/gbutton7.png" class="bg-slate-200 rounded-full hover:bg-orange-200 w-10 h-10">
+                </button>
+                <button class="w-20 h-12 hover:border-yellow-400 border-b-4 px-2">
+                    <img src="../images/gbutton8.png" class="bg-slate-200 rounded-full hover:bg-orange-200 w-10 h-10">
+                </button>
+                <button class="w-20 h-12 hover:border-yellow-400 border-b-4 px-2">
+                    <img src="../images/gbutton9.png" class="bg-slate-200 rounded-full hover:bg-orange-200 w-10 h-10">
+                </button>
+                <button class="w-20 h-12 hover:border-yellow-400 border-b-4 px-2">
+                    <img src="../images/gbutton10.png" class="bg-slate-200 rounded-full hover:bg-orange-200 w-10 h-10">
+                </button>
+            </div>
+        </div>
+        <!--CARD FLEX 1-->
+        <div class="flex flex-col my-3">
+            <div class="bg-white rounded-r-xl rounded-l-xl w-[300px] h-[425px] my-1 mx-2 p-2 relative">
+                <div class="bg-red-700 w-[100px] h-[30px] text-bold text-xl text-white text-mono rounded-r-lg absolute top-10">
+                    <h2>34% Off</h2>
+                </div>
+                <img src="../images/f1img1.png" class="insert-0 z-10">
+                <h1 class="mt-4 font-bold ml-4">Burger Combo for 2: McChicken <br>Burger</h1>
+                <p class="text-yellow-700 text-sm mt-2 ml-4">Save big on your favourite sharing combo...</p>
+                <h1 class="text-bold text-gray-500 inline text-2xl font-mono line-through ml-4 mt-2">₹588</h1>
+                <h1 class="text-bold inline text-2xl font-mono ml-1 mt-2">₹389</h1>
+                <button class="bg-yellow-500 rounded-r-md rounded-l-md text-black block h-[40px] w-[250px] pt-2 pb-2 pr-2 pl-2 ml-4 mt-2 hover:bg-yellow-100">
+                    <h1 class="text-bold text-xl">Add +</h1>
+                </button>
+                <p class="text-yellow-600 text-sm ml-20 mt-2">Custamizable</p>
+            </div>
+            <div class="bg-white rounded-r-xl rounded-l-xl w-[300px] h-[425px] my-1 mx-2 p-2 relative">
+                <div class="bg-red-700 w-[100px] h-[30px] text-bold text-xl text-white text-mono rounded-r-lg absolute top-10">
+                    <h2>38% Off</h2>
+                </div>
+                <img src="../images/f1img2.png">
+                <h1 class="mt-4 font-bold ml-4">McVeggie Burger + 2 Fries (M) + <br>McAloo Tikki+ Veg Pizza McPuff</h1>
+                <p class="text-yellow-700 text-xs mt-2 ml-4">Get the best value in your meal for 2. Save ...</p>
+                <h1 class="text-bold text-gray-500 inline text-2xl font-mono line-through ml-4 mt-2">₹497</h1>
+                <h1 class="text-bold inline text-2xl font-mono ml-1 mt-2">₹307</h1>
+                <button class="bg-yellow-500 rounded-r-md rounded-l-md text-black block h-[40px] w-[250px] pt-2 pb-2 pr-2 pl-2 ml-4 mt-2">
+                    <h1 class="text-bold text-xl">Add +</h1>
+                </button>
+                <p class="text-yellow-700 text-sm ml-20 mt-2">Custamizable</p>
+            </div>
+        </div>
+        <!--CARD FLEX 2-->
+        <div class="flex flex-col my-3">
+            <div class="bg-white rounded-r-xl rounded-l-xl w-[300px] h-[425px] my-1 mx-2 p-2 relative">
+                <img src="../images/f2img1.png">
+                <h1 class="mt-4 font-bold ml-4">McSpicy Chicken Burger + <br>McChicken Burger + Fries (M)</h1>
+                <p class="text-yellow-700 text-xs mt-2 ml-4">Flat 15% Off on McSpicy Chicken Burger + ...</p>
+                <h1 class="text-bold inline text-2xl font-mono ml-3 mt-2">₹373</h1>
+                <button class="bg-yellow-500 rounded-r-md rounded-l-md text-black block h-[40px] w-[250px] pt-2 pb-2 pr-2 pl-2 ml-4 mt-2">
+                    <h1 class="text-bold text-xl">Add +</h1>
+                </button>
+                <p class="text-yellow-700 text-sm ml-20 mt-2">Custamizable</p>
+            </div>
+            <div class="bg-white rounded-r-xl rounded-l-xl w-[300px] h-[425px] my-1 mx-2 p-2 relative">
+                <img src="../images/f2img2.png">
+                <h1 class="mt-4 font-bold ml-4">Burger Combo for 2: McSpicy <br>Deluxe Paneer Burger</h1>
+                <p class="text-yellow-700 text-xs mt-2 ml-4">Save upto 24% off on your favorite sharing...</p>
+                <h1 class="text-bold inline text-2xl font-mono ml-3 mt-2">₹499</h1>
+                <button class="bg-yellow-500 rounded-r-md rounded-l-md text-black block h-[40px] w-[250px] pt-2 pb-2 pr-2 pl-2 ml-4 mt-2">
+                    <h1 class="text-bold text-xl">Add +</h1>
+                </button>
+                <p class="text-yellow-700 text-sm ml-20 mt-2">Custamizable</p>
+            </div>
+        </div>
+        <!--CARD FLEX 3-->
+        <div class="flex flex-col my-3">
+            <div class="bg-white rounded-r-xl rounded-l-xl w-[300px] my-1 mx-2 p-2 relative">
+                <img src="../images/f3img1.png">
+                <h1 class="mt-4 font-bold ml-4">Burger Combo for 2: McSpicy <br>Deluxe Chicken Burger</h1>
+                <p class="text-yellow-700 text-xs mt-2 ml-4">Save upto 24% off on your favorite sharing c...</p>
+                <h1 class="text-bold inline text-2xl font-mono ml-3 mt-2">₹499</h1>
+                <button class="bg-yellow-500 rounded-r-md rounded-l-md text-black block h-[40px] w-[250px] pt-2 pb-2 pr-2 pl-2 ml-4 mt-2">
+                    <h1 class="text-bold text-xl">Add +</h1>
+                </button>
+                <p class="text-yellow-700 text-sm ml-20 mt-2">Custamizable</p>
+            </div>
+            <div class="bg-white rounded-r-xl rounded-l-xl w-[300px] h-[425px] my-1 mx-2 p-2 relative">
+                <img src="../images/f3img2.png">
+                <h1 class="mt-4 font-bold ml-4">Burger Combo for 2: McCheese <br>Burger Veg</h1>
+                <p class="text-yellow-700 text-xs mt-2 ml-4">Save big on your favourite sharing combo...</p>
+                <h1 class="text-bold inline text-2xl font-mono ml-3 mt-2">₹619</h1>
+                <button class="bg-yellow-500 rounded-r-md rounded-l-md text-black block h-[40px] w-[250px] pt-2 pb-2 pr-2 pl-2 ml-4 mt-2">
+                    <h1 class="text-bold text-xl">Add +</h1>
+                </button>
+                <p class="text-yellow-700 text-sm ml-20 mt-2">Custamizable</p>
+            </div>
+        </div>
+    </div>
+
+    <!--FOR TABLET SECTION ORDER-->
+    <div class="max-sm:hidden lg:hidden">
+        <div class="grid grid-cols-8 gap-3 my-28">
+            <!--GRID COL 1-->
+            <div class="col-start-1 col-end-3 bg-white h-[820px] w-[200px] rounded-t-xl shadow-t-xl">
+                <div class="flex flex-col mx-2">
+                    <button class="w-50 h-20 flex mt-4 hover:border-yellow-400 border-r-4">
+                        <img src="../images/gbutton1.png" class="bg-slate-200 rounded-full hover:bg-orange-200 w-[60px] h-[60px] p-2 mr-2">
+                        <p class="font-bold text-xs">Match Time <br>Sharing <br>Combos</p>
+                    </button>
+                    <button class="w-50 h-20 flex hover:border-yellow-400 border-r-4">
+                        <img src="../images/gbutton2.png" class="bg-slate-200 rounded-full hover:bg-orange-200 w-[60px] h-[60px] p-2 mr-2">
+                        <p class="font-bold mt-2 text-xs">WcDonald's <br>Combos</p>
+                    </button>
+                    <button class="w-50 h-20 flex hover:border-yellow-400 border-r-4">
+                        <img src="../images/gbutton3.png" class="bg-slate-200 rounded-full hover:bg-orange-200 w-[60px] h-[60px] p-2 mr-2">
+                        <p class="font-bold mt-2 text-xs">Burger& <br>Wraps</p>
+                    </button>
+                    <button class="w-50 h-20 flex hover:border-yellow-400 border-r-4">
+                        <img src="../images/gbutton4.png" class="bg-slate-200 rounded-full hover:bg-orange-200 w-[60px] h-[60px] p-2 mr-2">
+                        <p class="font-bold mt-1 text-xs">Burger Combos <br>( Meals )</p>
+                    </button>
+                    <button class="w-50 h-20 flex hover:border-yellow-400 border-r-4">
+                        <img src="../images/gbutton5.png" class="bg-slate-200 rounded-full hover:bg-orange-200 w-[60px] h-[60px] p-2 mr-2">
+                        <p class="font-bold mt-5 text-xs">Fries & Slides</p>
+                    </button>
+                    <button class="w-50 h-20 flex hover:border-yellow-400 border-r-4">
+                        <img src="../images/gbutton6.png" class="bg-slate-200 rounded-full hover:bg-orange-200 w-[60px] h-[60px] p-2 mr-2">
+                        <p class="font-bold text-xs">Coffe & <br>Bevarages(Hot <br>and Cold)</p>
+                    </button>
+                    <button class="w-50 h-20 flex hover:border-yellow-400 border-r-4">
+                        <img src="../images/gbutton7.png" class="bg-slate-200 rounded-full hover:bg-orange-200 w-[60px] h-[60px] p-2 mr-2">
+                        <p class="font-bold text-xs">McSaver <br>Compos(2pc <br>Compos)</p>
+                    </button>
+                    <button class="w-50 h-20 flex hover:border-yellow-400 border-r-4">
+                        <img src="../images/gbutton8.png" class="bg-slate-200 rounded-full hover:bg-orange-200 w-[60px] h-[60px] p-2 mr-2">
+                        <p class="font-bold mt-4 text-xs">Deserts</p>
+                    </button>
+                    <button class="w-50 h-20 flex hover:border-yellow-400 border-r-4">
+                        <img src="../images/gbutton9.png" class="bg-slate-200 rounded-full hover:bg-orange-200 w-[60px] h-[60px] p-2 mr-2">
+                        <p class="font-bold text-xs">Cakes <br>Brownies and <br>Cookies</p>
+                    </button>
+                    <button class="w-50 h-20 flex hover:border-yellow-400 border-r-4">
+                        <img src="../images/gbutton10.png" class="bg-slate-200 rounded-full hover:bg-orange-200 w-[60px] h-[60px] p-2 mr-2">
+                        <p class="font-bold text-xs">McSpicy <br>Compos with <br>Sprite</p>
+                    </button>
+                </div>
+            </div>
+            <!--GRID COL 2-->
+            <div class="col-start-3 col-end-8 w-full">
+                <!--CARD FLEX 1-->
+                <div class="flex space-x-1">
+                    <div class="bg-white rounded-r-xl rounded-l-xl w-[300px] h-[425px] p-2 relative">
+                        <div class="bg-red-700 w-[100px] h-[30px] text-bold text-xl text-white text-mono rounded-r-lg absolute top-10">
+                            <h2>34% Off</h2>
+                        </div>
+                        <img src="../images/f1img1.png" class="insert-0 z-10">
+                        <h1 class="mt-4 font-bold ml-4">Burger Combo for 2: McChicken <br>Burger</h1>
+                        <p class="text-yellow-700 text-xs mt-2 ml-4">Save big on your favourite sharing combo...</p>
+                        <h1 class="text-bold text-gray-500 inline text-2xl font-mono line-through ml-4 mt-2">₹588</h1>
+                        <h1 class="text-bold inline text-2xl font-mono ml-1 mt-2">₹389</h1>
+                        <button class="bg-yellow-500 rounded-r-md rounded-l-md text-black block h-[40px] w-[250px] pt-2 pb-2 pr-2 pl-2 ml-4 mt-2 hover:bg-yellow-100">
+                            <h1 class="text-bold text-xl">Add +</h1>
+                        </button>
+                        <p class="text-yellow-600 text-sm ml-20 mt-2">Custamizable</p>
+                    </div>
+                    <div class="bg-white rounded-r-xl rounded-l-xl w-[300px] h-[425px] p-2 relative">
+                        <div class="bg-red-700 w-[100px] h-[30px] text-bold text-xl text-white text-mono rounded-r-lg absolute top-10">
+                            <h2>38% Off</h2>
+                        </div>
+                        <img src="../images/f1img2.png">
+                        <h1 class="mt-4 font-bold ml-4">McVeggie Burger + 2 Fries (M) + <br>McAloo Tikki+ Veg Pizza McPuff</h1>
+                        <p class="text-yellow-700 text-xs mt-2 ml-4">Get the best value in your meal for 2. Save ...</p>
+                        <h1 class="text-bold text-gray-500 inline text-2xl font-mono line-through ml-4 mt-2">₹497</h1>
+                        <h1 class="text-bold inline text-2xl font-mono ml-1 mt-2">₹307</h1>
+                        <button class="bg-yellow-500 rounded-r-md rounded-l-md text-black block h-[40px] w-[250px] pt-2 pb-2 pr-2 pl-2 ml-4 mt-2">
+                            <h1 class="text-bold text-xl">Add +</h1>
+                        </button>
+                        <p class="text-yellow-700 text-sm ml-20 mt-2">Custamizable</p>
+                    </div>
+                </div>
+                <!--CARD FLEX 2-->
+                <div class="flex space-x-1">
+                    <div class="bg-white rounded-r-xl rounded-l-xl w-[300px] h-[425px] mt-5 p-2">
+                        <img src="../images/f2img1.png">
+                        <h1 class="mt-4 font-bold ml-4">McSpicy Chicken Burger + <br>McChicken Burger + Fries (M)</h1>
+                        <p class="text-yellow-700 text-xs mt-2 ml-4">Flat 15% Off on McSpicy Chicken Burger + ...</p>
+                        <h1 class="text-bold inline text-2xl font-mono ml-3 mt-2">₹373</h1>
+                        <button class="bg-yellow-500 rounded-r-md rounded-l-md text-black block h-[40px] w-[250px] pt-2 pb-2 pr-2 pl-2 ml-4 mt-2">
+                            <h1 class="text-bold text-xl">Add +</h1>
+                        </button>
+                        <p class="text-yellow-700 text-sm ml-20 mt-2">Custamizable</p>
+                    </div>
+                    <div class="bg-white rounded-r-xl rounded-l-xl w-[300px] h-[425px] mt-5 p-2">
+                        <img src="../images/f2img2.png">
+                        <h1 class="mt-4 font-bold ml-4">Burger Combo for 2: McSpicy <br>Deluxe Paneer Burger</h1>
+                        <p class="text-yellow-700 text-xs mt-2 ml-4">Save upto 24% off on your favorite sharing...</p>
+                        <h1 class="text-bold inline text-2xl font-mono ml-3 mt-2">₹499</h1>
+                        <button class="bg-yellow-500 rounded-r-md rounded-l-md text-black block h-[40px] w-[250px] pt-2 pb-2 pr-2 pl-2 ml-4 mt-2">
+                            <h1 class="text-bold text-xl">Add +</h1>
+                        </button>
+                        <p class="text-yellow-700 text-sm ml-20 mt-2">Custamizable</p>
+                    </div>
+                </div>
+                <!--CARD FLEX 3-->
+                <div class="flex space-x-1">
+                    <div class="bg-white rounded-r-xl rounded-l-xl w-[300px] h-[425px] mt-5 p-2">
+                        <img src="../images/f3img1.png">
+                        <h1 class="mt-4 font-bold ml-4">Burger Combo for 2: McSpicy <br>Deluxe Chicken Burger</h1>
+                        <p class="text-yellow-700 text-xs mt-2 ml-4">Save upto 24% off on your favorite sharing c...</p>
+                        <h1 class="text-bold inline text-2xl font-mono ml-3 mt-2">₹499</h1>
+                        <button class="bg-yellow-500 rounded-r-md rounded-l-md text-black block h-[40px] w-[250px] pt-2 pb-2 pr-2 pl-2 ml-4 mt-2">
+                            <h1 class="text-bold text-xl">Add +</h1>
+                        </button>
+                        <p class="text-yellow-700 text-sm ml-20 mt-2">Custamizable</p>
+                    </div>
+                    <div class="bg-white rounded-r-xl rounded-l-xl w-[300px] h-[425px] mt-5 p-2">
+                        <img src="../images/f3img2.png">
+                        <h1 class="mt-4 font-bold ml-4">Burger Combo for 2: McCheese <br>Burger Veg</h1>
+                        <p class="text-yellow-700 text-xs mt-2 ml-4">Save big on your favourite sharing combo...</p>
+                        <h1 class="text-bold inline text-2xl font-mono ml-3 mt-2">₹619</h1>
+                        <button class="bg-yellow-500 rounded-r-md rounded-l-md text-black block h-[40px] w-[250px] pt-2 pb-2 pr-2 pl-2 ml-4 mt-2">
+                            <h1 class="text-bold text-xl">Add +</h1>
+                        </button>
+                        <p class="text-yellow-700 text-sm ml-20 mt-2">Custamizable</p>
+                    </div>
+                </div>
+                <!--CARD FLEX 4-->
+                <div class="flex space-x-1">
+                    <div class="bg-white rounded-r-xl rounded-l-xl w-[300px] h-[425px] mt-5 p-2">
+                        <img src="../images/f4img1.png">
+                        <h1 class="mt-4 font-bold ml-4">Burger Combo for 2: McCheese <br>Burger Chicken</h1>
+                        <p class="text-yellow-700 text-xs mt-2 ml-4">Save big on your favourite sharing combo...</p>
+                        <h1 class="text-bold inline text-2xl font-mono ml-3 mt-2">₹649</h1>
+                        <button class="bg-yellow-500 rounded-r-md rounded-l-md text-black block h-[40px] w-[250px] pt-2 pb-2 pr-2 pl-2 ml-4 mt-2">
+                            <h1 class="text-bold text-xl">Add +</h1>
+                        </button>
+                        <p class="text-yellow-700 text-sm ml-20 mt-2">Custamizable</p>
+                    </div>
+                    <div class="bg-white rounded-r-xl rounded-l-xl w-[300px] h-[425px] mt-5 p-2">
+                        <img src="../images/f4img2.png">
+                        <h1 class="mt-4 font-bold ml-4">Burger Combo for 2: Corn & <br>Cheese Burger</h1>
+                        <p class="text-yellow-700 text-xs mt-2 ml-4">Save big on your favourite sharing combo...</p>
+                        <h1 class="text-bold inline text-2xl font-mono ml-3 mt-2">₹419</h1>
+                        <button class="bg-yellow-500 rounded-r-md rounded-l-md text-black block h-[40px] w-[250px] pt-2 pb-2 pr-2 pl-2 ml-4 mt-2">
+                            <h1 class="text-bold text-xl">Add +</h1>
+                        </button>
+                        <p class="text-yellow-700 text-sm ml-20 mt-2">Custamizable</p>
+                    </div>
+                </div>
+                <!--CARD FLEX 5-->
+                <div class="flex space-x-1">
+                    <div class="bg-white rounded-r-xl rounded-l-xl w-[300px] h-[425px] mt-5 p-2">
+                        <img src="../images/f5img1.png">
+                        <h1 class="mt-4 font-bold ml-4">Burger Combo for 2: Grilled <br>Chicken & Cheese</h1>
+                        <p class="text-yellow-700 text-xs mt-2 ml-4">Save big on your favourite sharing combo...</p>
+                        <h1 class="text-bold inline text-2xl font-mono ml-3 mt-2">₹470</h1>
+                        <button class="bg-yellow-500 rounded-r-md rounded-l-md text-black block h-[40px] w-[250px] pt-2 pb-2 pr-2 pl-2 ml-4 mt-2">
+                            <h1 class="text-bold text-xl">Add +</h1>
+                        </button>
+                        <p class="text-yellow-700 text-sm ml-20 mt-2">Custamizable</p>
+                    </div>
+                    <div class="bg-white rounded-r-xl rounded-l-xl w-[300px] h-[425px] mt-5 p-2 relative">
+                        <div class="bg-red-700 w-[100px] h-[30px] text-bold text-xl text-white text-mono rounded-r-lg absolute top-10">
+                            <h2>29% Off</h2>
+                        </div>
+                        <img src="../images/f5img2.jpeg">
+                        <h1 class="mt-4 font-bold ml-4">Burger Combo for 2: McSpicy <br>Chicken Burger</h1>
+                        <p class="text-yellow-700 text-xs mt-2 ml-4">Save big on your favourite sharing combo...</p>
+                        <h1 class="text-bold text-gray-500 inline text-2xl font-mono line-through ml-4 mt-2">₹688</h1>
+                        <h1 class="text-bold inline text-2xl font-mono ml-1 mt-2">₹490</h1>
+                        <button class="bg-yellow-500 rounded-r-md rounded-l-md text-black block h-[40px] w-[250px] pt-2 pb-2 pr-2 pl-2 ml-4 mt-2">
+                            <h1 class="text-bold text-xl">Add +</h1>
+                        </button>
+                        <p class="text-yellow-700 text-sm ml-20 mt-2">Custamizable</p>
+                    </div>
+                </div>
+                <!--CARD FLEX 6-->
+                <div class="flex space-x-1">
+                    <div class="bg-white rounded-r-xl rounded-l-xl w-[300px] h-[425px] mt-5 p-2 relative">
+                        <div class="bg-red-700 w-[100px] h-[30px] text-bold text-xl text-white text-mono rounded-r-lg absolute top-10">
+                            <h2>37% Off</h2>
+                        </div>
+                        <img src="../images/f6img1.png">
+                        <h1 class="mt-4 font-bold ml-4">Burger Combo for 2: McVeggie <br>Burger</h1>
+                        <p class="text-yellow-700 text-sm mt-2 ml-4">Save big on your favourite sharing combo...</p>
+                        <h1 class="text-bold text-gray-500 inline text-2xl font-mono line-through ml-4 mt-2">₹616</h1>
+                        <h1 class="text-bold inline text-2xl font-mono ml-1 mt-2">₹389</h1>
+                        <button class="bg-yellow-500 rounded-r-md rounded-l-md text-black block h-[40px] w-[250px] pt-2 pb-2 pr-2 pl-2 ml-4 mt-2">
+                            <h1 class="text-bold text-xl">Add +</h1>
+                        </button>
+                        <p class="text-yellow-700 text-sm ml-20 mt-2">Custamizable</p>
+                    </div>
+                    <div class="bg-white rounded-r-xl rounded-l-xl w-[300px] h-[425px] mt-5 p-2">
+                        <img src="../images/f6img2.png">
+                        <h1 class="mt-4 font-bold ml-4">Corn & Cheese Burger +McVeggie <br>(M)Burger+Fries</h1>
+                        <p class="text-yellow-700 text-xs mt-2 ml-4">Flat 15% Off on Corn & Cheese Burger +Mc...</p>
+                        <h1 class="text-bold inline text-2xl font-mono ml-3 mt-2">₹330</h1>
+                        <button class="bg-yellow-500 rounded-r-md rounded-l-md text-black block h-[40px] w-[250px] pt-2 pb-2 pr-2 pl-2 ml-4 mt-2">
+                            <h1 class="text-bold text-xl">Add +</h1>
+                        </button>
+                        <p class="text-yellow-700 text-sm ml-20 mt-2">Custamizable</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--FOR LARGE SCREEN SECTION ORDER-->
+    <div class="max-lg:hidden">
+        <div class="grid grid-cols-6 gap-4 mt-28">
+            <!--GRID COL 1-->
+            <div class="col-start-1 col-end-2 bg-white h-[820px] w-full rounded-t-xl max-xl:col-end-3 max-sm:col-end-4">
+                <div class="flex flex-col max-lg:justify-end">
+                    <button class="w-50 h-20 flex ml-8 mt-4 hover:border-yellow-400 border-r-4">
+                        <img src="../images/gbutton1.png" class="bg-slate-200 rounded-full hover:bg-orange-200 w-[60px] h-[60px] p-2 mr-2">
+                        <p class="font-bold">Match Time <br>Sharing <br>Combos</p>
+                    </button>
+                    <button class="w-50 h-20 flex ml-8 hover:border-yellow-400 border-r-4">
+                        <img src="../images/gbutton2.png" class="bg-slate-200 rounded-full hover:bg-orange-200 w-[60px] h-[60px] p-2 mr-2">
+                        <p class="font-bold mt-2 ml-1">WcDonald's <br>Combos</p>
+                    </button>
+                    <button class="w-50 h-20 flex ml-8 hover:border-yellow-400 border-r-4">
+                        <img src="../images/gbutton3.png" class="bg-slate-200 rounded-full hover:bg-orange-200 w-[60px] h-[60px] p-2 mr-2">
+                        <p class="font-bold mt-2  ml-3">Burger& <br>Wraps</p>
+                    </button>
+                    <button class="w-50 h-20 flex ml-8 hover:border-yellow-400 border-r-4">
+                        <img src="../images/gbutton4.png" class="bg-slate-200 rounded-full hover:bg-orange-200 w-[60px] h-[60px] p-2 mr-2">
+                        <p class="font-bold mt-1">Burger Combos <br>( Meals )</p>
+                    </button>
+                    <button class="w-50 h-20 flex ml-8 hover:border-yellow-400 border-r-4">
+                        <img src="../images/gbutton5.png" class="bg-slate-200 rounded-full hover:bg-orange-200 w-[60px] h-[60px] p-2 mr-2">
+                        <p class="font-bold mt-5">Fries & Slides</p>
+                    </button>
+                    <button class="w-50 h-20 flex ml-8 hover:border-yellow-400 border-r-4">
+                        <img src="../images/gbutton6.png" class="bg-slate-200 rounded-full hover:bg-orange-200 w-[60px] h-[60px] p-2 mr-2">
+                        <p class="font-bold">Coffe & <br>Bevarages(Hot <br>and Cold)</p>
+                    </button>
+                    <button class="w-50 h-20 flex ml-8 hover:border-yellow-400 border-r-4">
+                        <img src="../images/gbutton7.png" class="bg-slate-200 rounded-full hover:bg-orange-200 w-[60px] h-[60px] p-2 mr-2">
+                        <p class="font-bold">McSaver <br>Compos(2pc <br>Compos)</p>
+                    </button>
+                    <button class="w-50 h-20 flex ml-8 hover:border-yellow-400 border-r-4">
+                        <img src="../images/gbutton8.png" class="bg-slate-200 rounded-full hover:bg-orange-200 w-[60px] h-[60px] p-2 mr-2">
+                        <p class="font-bold mt-4 ml-4">Deserts</p>
+                    </button>
+                    <button class="w-50 h-20 flex ml-8 hover:border-yellow-400 border-r-4">
+                        <img src="../images/gbutton9.png" class="bg-slate-200 rounded-full hover:bg-orange-200 w-[60px] h-[60px] p-2 mr-2">
+                        <p class="font-bold">Cakes <br>Brownies and <br>Cookies</p>
+                    </button>
+                    <button class="w-50 h-20 flex ml-8 hover:border-yellow-400 border-r-4">
+                        <img src="../images/gbutton10.png" class="bg-slate-200 rounded-full hover:bg-orange-200 w-[60px] h-[60px] p-2 mr-2">
+                        <p class="font-bold">McSpicy <br>Compos with <br>Sprite</p>
+                    </button>
+                </div>
+            </div>
+    
+            <!--GRID COL 2-->
+            <div class="col-start-2 col-end-5 bg-amber-50 h-[4500px] w-full rounded-t-xl max-xl:col-start-3 max-sm:col-start-4 max-sm:col-end-6 max-xl:h-[9000px]">
+                <h2 class="font-bold font-sans text-2xl ml-4 mt-3">Match Time Sharing Combos</h2>
+                <!--SMALL FLEX-->
+                <div class="flex">
+                    <button class="rounded-l-2xl rounded-r-2xl text-purple-200 bg-yellow-100 border-purple-200 border-2 mt-3 ml-4 pl-4 pr-4 pt-1 pb-1">Veg</button>
+                    <button class="rounded-l-2xl rounded-r-2xl text-purple-200 bg-yellow-100 border-purple-200 border-2 mt-3 ml-4 pl-4 pr-4 pt-1 pb-1">Non-Veg</button>
+                </div>
+    
+                <!--CARD FLEX 1-->
+                <div class="flex max-xl:flex-col max-lg:flex">
+                    <div class="bg-white rounded-r-xl rounded-l-xl w-[300px] h-[425px] mt-5 p-2 relative">
+                        <div class="bg-red-700 w-[100px] h-[30px] text-bold text-xl text-white text-mono rounded-r-lg absolute top-10">
+                            <h2>34% Off</h2>
+                        </div>
+                        <img src="../images/f1img1.png" class="insert-0 z-10">
+                        <h1 class="mt-4 font-bold ml-4">Burger Combo for 2: McChicken <br>Burger</h1>
+                        <p class="text-yellow-700 text-sm mt-2 ml-4">Save big on your favourite sharing combo...</p>
+                        <h1 class="text-bold text-gray-500 inline text-2xl font-mono line-through ml-4 mt-2">₹588</h1>
+                        <h1 class="text-bold inline text-2xl font-mono ml-1 mt-2">₹389</h1>
+                        <button class="bg-yellow-500 rounded-r-md rounded-l-md text-black block h-[40px] w-[250px] pt-2 pb-2 pr-2 pl-2 ml-4 mt-2 hover:bg-yellow-100">
+                            <h1 class="text-bold text-xl">Add +</h1>
+                        </button>
+                        <p class="text-yellow-600 text-sm ml-20 mt-2">Custamizable</p>
+                    </div>
+                    <div class="bg-white rounded-r-xl rounded-l-xl w-[300px] h-[425px] mt-5 ml-4 p-2 relative">
+                        <div class="bg-red-700 w-[100px] h-[30px] text-bold text-xl text-white text-mono rounded-r-lg absolute top-10">
+                            <h2>38% Off</h2>
+                        </div>
+                        <img src="../images/f1img2.png">
+                        <h1 class="mt-4 font-bold ml-4">McVeggie Burger + 2 Fries (M) + <br>McAloo Tikki+ Veg Pizza McPuff</h1>
+                        <p class="text-yellow-700 text-xs mt-2 ml-4">Get the best value in your meal for 2. Save ...</p>
+                        <h1 class="text-bold text-gray-500 inline text-2xl font-mono line-through ml-4 mt-2">₹497</h1>
+                        <h1 class="text-bold inline text-2xl font-mono ml-1 mt-2">₹307</h1>
+                        <button class="bg-yellow-500 rounded-r-md rounded-l-md text-black block h-[40px] w-[250px] pt-2 pb-2 pr-2 pl-2 ml-4 mt-2">
+                            <h1 class="text-bold text-xl">Add +</h1>
+                        </button>
+                        <p class="text-yellow-700 text-sm ml-20 mt-2">Custamizable</p>
+                    </div>
+                </div>
+    
+                <!--CARD FLEX 2-->
+                <div class="flex max-xl:flex-col">
+                    <div class="bg-white rounded-r-xl rounded-l-xl w-[300px] h-[425px] mt-5 p-2">
+                        <img src="../images/f2img1.png">
+                        <h1 class="mt-4 font-bold ml-4">McSpicy Chicken Burger + <br>McChicken Burger + Fries (M)</h1>
+                        <p class="text-yellow-700 text-xs mt-2 ml-4">Flat 15% Off on McSpicy Chicken Burger + ...</p>
+                        <h1 class="text-bold inline text-2xl font-mono ml-3 mt-2">₹373</h1>
+                        <button class="bg-yellow-500 rounded-r-md rounded-l-md text-black block h-[40px] w-[250px] pt-2 pb-2 pr-2 pl-2 ml-4 mt-2">
+                            <h1 class="text-bold text-xl">Add +</h1>
+                        </button>
+                        <p class="text-yellow-700 text-sm ml-20 mt-2">Custamizable</p>
+                    </div>
+                    <div class="bg-white rounded-r-xl rounded-l-xl w-[300px] h-[425px] mt-5 ml-4 p-2">
+                        <img src="../images/f2img2.png">
+                        <h1 class="mt-4 font-bold ml-4">Burger Combo for 2: McSpicy <br>Deluxe Paneer Burger</h1>
+                        <p class="text-yellow-700 text-xs mt-2 ml-4">Save upto 24% off on your favorite sharing...</p>
+                        <h1 class="text-bold inline text-2xl font-mono ml-3 mt-2">₹499</h1>
+                        <button class="bg-yellow-500 rounded-r-md rounded-l-md text-black block h-[40px] w-[250px] pt-2 pb-2 pr-2 pl-2 ml-4 mt-2">
+                            <h1 class="text-bold text-xl">Add +</h1>
+                        </button>
+                        <p class="text-yellow-700 text-sm ml-20 mt-2">Custamizable</p>
+                    </div>
+                </div>
+    
+                <!--CARD FLEX 3-->
+                <div class="flex max-xl:flex-col">
+                    <div class="bg-white rounded-r-xl rounded-l-xl w-[300px] h-[425px] mt-5 p-2">
+                        <img src="../images/f3img1.png">
+                        <h1 class="mt-4 font-bold ml-4">Burger Combo for 2: McSpicy <br>Deluxe Chicken Burger</h1>
+                        <p class="text-yellow-700 text-xs mt-2 ml-4">Save upto 24% off on your favorite sharing c...</p>
+                        <h1 class="text-bold inline text-2xl font-mono ml-3 mt-2">₹499</h1>
+                        <button class="bg-yellow-500 rounded-r-md rounded-l-md text-black block h-[40px] w-[250px] pt-2 pb-2 pr-2 pl-2 ml-4 mt-2">
+                            <h1 class="text-bold text-xl">Add +</h1>
+                        </button>
+                        <p class="text-yellow-700 text-sm ml-20 mt-2">Custamizable</p>
+                    </div>
+                    <div class="bg-white rounded-r-xl rounded-l-xl w-[300px] h-[425px] mt-5 ml-4 p-2">
+                        <img src="../images/f3img2.png">
+                        <h1 class="mt-4 font-bold ml-4">Burger Combo for 2: McCheese <br>Burger Veg</h1>
+                        <p class="text-yellow-700 text-xs mt-2 ml-4">Save big on your favourite sharing combo...</p>
+                        <h1 class="text-bold inline text-2xl font-mono ml-3 mt-2">₹619</h1>
+                        <button class="bg-yellow-500 rounded-r-md rounded-l-md text-black block h-[40px] w-[250px] pt-2 pb-2 pr-2 pl-2 ml-4 mt-2">
+                            <h1 class="text-bold text-xl">Add +</h1>
+                        </button>
+                        <p class="text-yellow-700 text-sm ml-20 mt-2">Custamizable</p>
+                    </div>
+                </div>
+    
+                <!--CARD FLEX 4-->
+                <div class="flex max-xl:flex-col">
+                    <div class="bg-white rounded-r-xl rounded-l-xl w-[300px] h-[425px] mt-5 p-2">
+                        <img src="../images/f4img1.png">
+                        <h1 class="mt-4 font-bold ml-4">Burger Combo for 2: McCheese <br>Burger Chicken</h1>
+                        <p class="text-yellow-700 text-sm mt-2 ml-4">Save big on your favourite sharing combo...</p>
+                        <h1 class="text-bold inline text-2xl font-mono ml-3 mt-2">₹649</h1>
+                        <button class="bg-yellow-500 rounded-r-md rounded-l-md text-black block h-[40px] w-[250px] pt-2 pb-2 pr-2 pl-2 ml-4 mt-2">
+                            <h1 class="text-bold text-xl">Add +</h1>
+                        </button>
+                        <p class="text-yellow-700 text-sm ml-20 mt-2">Custamizable</p>
+                    </div>
+                    <div class="bg-white rounded-r-xl rounded-l-xl w-[300px] h-[425px] mt-5 ml-4 p-2">
+                        <img src="../images/f4img2.png">
+                        <h1 class="mt-4 font-bold ml-4">Burger Combo for 2: Corn & <br>Cheese Burger</h1>
+                        <p class="text-yellow-700 text-xs mt-2 ml-4">Save big on your favourite sharing combo...</p>
+                        <h1 class="text-bold inline text-2xl font-mono ml-3 mt-2">₹419</h1>
+                        <button class="bg-yellow-500 rounded-r-md rounded-l-md text-black block h-[40px] w-[250px] pt-2 pb-2 pr-2 pl-2 ml-4 mt-2">
+                            <h1 class="text-bold text-xl">Add +</h1>
+                        </button>
+                        <p class="text-yellow-700 text-sm ml-20 mt-2">Custamizable</p>
+                    </div>
+                </div>
+    
+                <!--CARD FLEX 5-->
+                <div class="flex max-xl:flex-col">
+                    <div class="bg-white rounded-r-xl rounded-l-xl w-[300px] h-[425px] mt-5 p-2">
+                        <img src="../images/f5img1.png">
+                        <h1 class="mt-4 font-bold ml-4">Burger Combo for 2: Grilled <br>Chicken & Cheese</h1>
+                        <p class="text-yellow-700 text-sm mt-2 ml-4">Save big on your favourite sharing combo...</p>
+                        <h1 class="text-bold inline text-2xl font-mono ml-3 mt-2">₹470</h1>
+                        <button class="bg-yellow-500 rounded-r-md rounded-l-md text-black block h-[40px] w-[250px] pt-2 pb-2 pr-2 pl-2 ml-4 mt-2">
+                            <h1 class="text-bold text-xl">Add +</h1>
+                        </button>
+                        <p class="text-yellow-700 text-sm ml-20 mt-2">Custamizable</p>
+                    </div>
+                    <div class="bg-white rounded-r-xl rounded-l-xl w-[300px] h-[425px] mt-5 ml-4 p-2 relative">
+                        <div class="bg-red-700 w-[100px] h-[30px] text-bold text-xl text-white text-mono rounded-r-lg absolute top-10">
+                            <h2>29% Off</h2>
+                        </div>
+                        <img src="../images/f5img2.jpeg">
+                        <h1 class="mt-4 font-bold ml-4">Burger Combo for 2: McSpicy <br>Chicken Burger</h1>
+                        <p class="text-yellow-700 text-xs mt-2 ml-4">Save big on your favourite sharing combo...</p>
+                        <h1 class="text-bold text-gray-500 inline text-2xl font-mono line-through ml-4 mt-2">₹688</h1>
+                        <h1 class="text-bold inline text-2xl font-mono ml-1 mt-2">₹490</h1>
+                        <button class="bg-yellow-500 rounded-r-md rounded-l-md text-black block h-[40px] w-[250px] pt-2 pb-2 pr-2 pl-2 ml-4 mt-2">
+                            <h1 class="text-bold text-xl">Add +</h1>
+                        </button>
+                        <p class="text-yellow-700 text-sm ml-20 mt-2">Custamizable</p>
+                    </div>
+                </div>
+    
+                <!--CARD FLEX 6-->
+                <div class="flex max-xl:flex-col">
+                    <div class="bg-white rounded-r-xl rounded-l-xl w-[300px] h-[425px] mt-5 p-2 relative">
+                        <div class="bg-red-700 w-[100px] h-[30px] text-bold text-xl text-white text-mono rounded-r-lg absolute top-10">
+                            <h2>37% Off</h2>
+                        </div>
+                        <img src="../images/f6img1.png">
+                        <h1 class="mt-4 font-bold ml-4">Burger Combo for 2: McVeggie <br>Burger</h1>
+                        <p class="text-yellow-700 text-sm mt-2 ml-4">Save big on your favourite sharing combo...</p>
+                        <h1 class="text-bold text-gray-500 inline text-2xl font-mono line-through ml-4 mt-2">₹616</h1>
+                        <h1 class="text-bold inline text-2xl font-mono ml-1 mt-2">₹389</h1>
+                        <button class="bg-yellow-500 rounded-r-md rounded-l-md text-black block h-[40px] w-[250px] pt-2 pb-2 pr-2 pl-2 ml-4 mt-2">
+                            <h1 class="text-bold text-xl">Add +</h1>
+                        </button>
+                        <p class="text-yellow-700 text-sm ml-20 mt-2">Custamizable</p>
+                    </div>
+                    <div class="bg-white rounded-r-xl rounded-l-xl w-[300px] h-[425px] mt-5 ml-4 p-2">
+                        <img src="../images/f6img2.png">
+                        <h1 class="mt-4 font-bold ml-4">Corn & Cheese Burger +McVeggie <br>(M)Burger+Fries</h1>
+                        <p class="text-yellow-700 text-xs mt-2 ml-4">Flat 15% Off on Corn & Cheese Burger +Mc...</p>
+                        <h1 class="text-bold inline text-2xl font-mono ml-3 mt-2">₹330</h1>
+                        <button class="bg-yellow-500 rounded-r-md rounded-l-md text-black block h-[40px] w-[250px] pt-2 pb-2 pr-2 pl-2 ml-4 mt-2">
+                            <h1 class="text-bold text-xl">Add +</h1>
+                        </button>
+                        <p class="text-yellow-700 text-sm ml-20 mt-2">Custamizable</p>
+                    </div>
+                </div>
+    
+                <!--CARD FLEX 7-->
+                <div class="flex max-xl:flex-col">
+                    <div class="bg-white rounded-r-xl rounded-l-xl w-[300px] h-[425px] mt-5 p-2 relative">
+                        <div class="bg-red-700 w-[100px] h-[30px] text-bold text-xl text-white text-mono rounded-r-lg absolute top-10">
+                            <h2>25% Off</h2>
+                        </div>
+                        <img src="../images/f7img1.png">
+                        <h1 class="mt-4 font-bold ml-4">Burger Combo for 2: McSpicy <br>Chicken Burger with Pizza McPuff</h1>
+                        <p class="text-yellow-700 text-sm mt-2 ml-4">Save big on your favourite sharing combo...</p>
+                        <h1 class="text-bold text-gray-500 inline text-2xl font-mono line-through ml-4 mt-2">₹654</h1>
+                        <h1 class="text-bold inline text-2xl font-mono ml-1 mt-2">₹491</h1>
+                        <button class="bg-yellow-500 rounded-r-md rounded-l-md text-black block h-[40px] w-[250px] pt-2 pb-2 pr-2 pl-2 ml-4 mt-2">
+                            <h1 class="text-bold text-xl">Add +</h1>
+                        </button>
+                        <p class="text-yellow-700 text-sm ml-20 mt-2">Custamizable</p>
+                    </div>
+                    <div class="bg-white rounded-r-xl rounded-l-xl w-[300px] h-[425px] mt-5 ml-4 p-2 relative">
+                        <div class="bg-red-700 w-[100px] h-[30px] text-bold text-xl text-white text-mono rounded-r-lg absolute top-10">
+                            <h2>34% Off</h2>
+                        </div>
+                        <img src="../images/f7img2.png">
+                        <h1 class="mt-4 font-bold ml-4">Burger Combo for 2: McChicken <br>Burger with Pizza McPuff</h1>
+                        <p class="text-yellow-700 text-xs mt-2 ml-4">Save big on your favourite sharing combo - 2 McChic...</p>
+                        <h1 class="text-bold text-gray-500 inline text-2xl font-mono line-through ml-4 mt-2">₹586</h1>
+                        <h1 class="text-bold inline text-2xl font-mono ml-1 mt-2">₹389</h1>
+                        <button class="bg-yellow-500 rounded-r-md rounded-l-md text-black block h-[40px] w-[250px] pt-2 pb-2 pr-2 pl-2 ml-4 mt-2">
+                            <h1 class="text-bold text-xl">Add +</h1>
+                        </button>
+                        <p class="text-yellow-700 text-sm ml-20 mt-2">Custamizable</p>
+                    </div>
+                </div>
+    
+                <!--CARD FLEX 8-->
+                <div class="flex max-xl:flex-col relative">
+                    <div class="bg-white rounded-r-xl rounded-l-xl w-[300px] h-[425px] mt-5 p-2">
+                        <div class="bg-red-700 w-[100px] h-[30px] text-bold text-xl text-white text-mono rounded-r-lg absolute top-10">
+                            <h2>33% Off</h2>
+                        </div>
+                        <img src="../images/f8img1.png">
+                        <h1 class="mt-4 font-bold ml-4">McSpicy Paneer Burger + McAloo <br>Tikki Burger + Fries (L) + 2 Coke</h1>
+                        <p class="text-yellow-700 text-xs mt-2 ml-4">Get the best value in your meal for 2. Save ...</p>
+                        <h1 class="text-bold text-gray-500 inline text-2xl font-mono line-through ml-4 mt-2">₹582</h1>
+                        <h1 class="text-bold inline text-2xl font-mono ml-1 mt-2">₹389</h1>
+                        <button class="bg-yellow-500 rounded-r-md rounded-l-md text-black block h-[40px] w-[250px] pt-2 pb-2 pr-2 pl-2 ml-4 mt-2">
+                            <h1 class="text-bold text-xl">Add +</h1>
+                        </button>
+                        <p class="text-yellow-700 text-sm ml-20 mt-2">Custamizable</p>
+                    </div>
+                    <div class="bg-white rounded-r-xl rounded-l-xl w-[300px] h-[425px] mt-5 ml-4 p-2 relative">
+                        <div class="bg-red-700 w-[100px] h-[30px] text-bold text-xl text-white text-mono rounded-r-lg absolute top-10">
+                            <h2>37% Off</h2>
+                        </div>
+                        <img src="../images/f8img2.png">
+                        <h1 class="mt-4 font-bold ml-4">McVeggie Burger + McAloo Tikki <br>Burger + Fries (L) + 2 Coke</h1>
+                        <p class="text-yellow-700 text-xs mt-2 ml-4">Get the best value in your meal for 2. Save ...</p>
+                        <h1 class="text-bold text-gray-500 inline text-2xl font-mono line-through ml-4 mt-2">₹531</h1>
+                        <h1 class="text-bold inline text-2xl font-mono ml-1 mt-2">₹337</h1>
+                        <button class="bg-yellow-500 rounded-r-md rounded-l-md text-black block h-[40px] w-[250px] pt-2 pb-2 pr-2 pl-2 ml-4 mt-2">
+                            <h1 class="text-bold text-xl">Add +</h1>
+                        </button>
+                        <p class="text-yellow-700 text-sm ml-20 mt-2">Custamizable</p>
+                    </div>
+                </div>
+    
+                <!--CARD FLEX 9-->
+                <div class="flex max-xl:flex-col">
+                    <div class="bg-white rounded-r-xl rounded-l-xl w-[300px] h-[425px] mt-5 p-2 relative">
+                        <div class="bg-red-700 w-[100px] h-[30px] text-bold text-xl text-white text-mono rounded-r-lg absolute top-10">
+                            <h2>37% Off</h2>
+                        </div>
+                        <img src="../images/f9img1.png">
+                        <h1 class="mt-4 font-bold ml-4">Burger Combo for 2: McVeggie <br>Burger with Pizza McPuff</h1>
+                        <p class="text-yellow-700 text-sm mt-2 ml-4">Save big on your favourite sharing combo...</p>
+                        <h1 class="text-bold text-gray-500 inline text-2xl font-mono line-through ml-4 mt-2">₹641</h1>
+                        <h1 class="text-bold inline text-2xl font-mono ml-1 mt-2">₹389</h1>
+                        <button class="bg-yellow-500 rounded-r-md rounded-l-md text-black block h-[40px] w-[250px] pt-2 pb-2 pr-2 pl-2 ml-4 mt-2">
+                            <h1 class="text-bold text-xl">Add +</h1>
+                        </button>
+                        <p class="text-yellow-700 text-sm ml-20 mt-2">Custamizable</p>
+                    </div>
+                    <div class="bg-white rounded-r-xl rounded-l-xl w-[300px] h-[425px] mt-5 ml-4 p-2">
+                        <img src="../images/f9img2.png" class="h-[200px] w=[200px] ml-7">
+                        <h1 class="mt-4 font-bold ml-4">2 Chicken Maharaja Mac Burger+2 <br>Coke+Fries(L)+McFlurry Oreo(M)</h1>
+                        <p class="text-yellow-700 text-xs mt-2 ml-4">Enjoy 2 of the tallest burgers innovated by...</p>
+                        <h1 class="text-bold inline text-2xl font-mono ml-3 mt-2">₹610</h1>
+                        <button class="bg-yellow-500 rounded-r-md rounded-l-md text-black block h-[40px] w-[250px] pt-2 pb-2 pr-2 pl-2 ml-4 mt-2">
+                            <h1 class="text-bold text-xl">Add +</h1>
+                        </button>
+                        <p class="text-yellow-700 text-sm ml-20 mt-2">Custamizable</p>
+                    </div>
+                </div>
+    
+                <!--CARD FLEX 10-->
+                <div class="flex max-xl:flex-col">
+                    <div class="bg-white rounded-r-xl rounded-l-xl w-[300px] h-[425px] mt-5 p-2">
+                        <img src="../images/f10img1.png">
+                        <h1 class="mt-4 font-bold ml-4">2 McAloo Tikki Burger + <br>2 Fries (L)</h1>
+                        <p class="text-yellow-700 text-sm mt-2 ml-4">Stay home, stay safe and share a combo-...</p>
+                        <h1 class="text-bold inline text-2xl font-mono ml-3 mt-2">₹328</h1>
+                        <button class="bg-yellow-500 rounded-r-md rounded-l-md text-black block h-[40px] w-[250px] pt-2 pb-2 pr-2 pl-2 ml-4 mt-2">
+                            <h1 class="text-bold text-xl">Add +</h1>
+                        </button>
+                        <p class="text-yellow-700 text-sm ml-20 mt-2">Custamizable</p>
+                    </div>
+                    <div class="bg-white rounded-r-xl rounded-l-xl w-[300px] h-[425px] mt-5 ml-4 p-2 relative">
+                        <div class="bg-red-700 w-[100px] h-[30px] text-bold text-xl text-white text-mono rounded-r-lg absolute top-10">
+                            <h2>29% Off</h2>
+                        </div>
+                        <img src="../images/f10img2.png">
+                        <h1 class="mt-4 font-bold ml-4">McSpicy Paneer Burger+2FriesM+ <br>McAloo Tikki + Veg Pizza McPuff</h1>
+                        <p class="text-yellow-700 text-xs mt-1 ml-4">Get the best value in your meal for 2. Save big...</p>
+                        <h1 class="text-bold text-gray-500 inline text-2xl font-mono line-through ml-4 mt-2">₹548</h1>
+                        <h1 class="text-bold inline text-2xl font-mono ml-3 mt-2">₹388</h1>
+                        <button class="bg-yellow-500 rounded-r-md rounded-l-md text-black block h-[40px] w-[250px] pt-2 pb-2 pr-2 pl-2 ml-4 mt-2">
+                            <h1 class="text-bold text-xl">Add +</h1>
+                        </button>
+                        <p class="text-yellow-700 text-sm ml-20 mt-2">Custamizable</p>
+                    </div>
+                </div>
+            </div>
+    
+            <!--GRID COL 3-->
+            <div class="col-start-5 col-end-7 bg-amber-50 h-[100px] w-full rounded-t-xl max-lg:col-end-6 max-lg:hidden">
+                <div class="flex flex-col w-[400px] h-[300px] bg-white rounded-xl justify-evenly items-start
+                max-xl:h-[300px] max-xl:w-[300px] px-5 py-5">
+                    <h1 class="font-bold text-xl">Your Cart</h1>
+                    <img src="../images/yourcart.svg">
+                    <h1 class="font-bold text-xl">Oops! Your cart is empty. You haven’t placed any order yet.</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--4.INFORMATION SECTION-->
+    <div class="flex flex-col mx-16 my-16 items-start max-sm:mx-3 max-sm:my-3">
+        <h1 class="font-bold text-xl my-5">McDelivery India – Order Food Online</h1>
+        <br>
+        <p class="my-3">
+            Waiting to sink your teeth into just about anything from the McDonald’s food menu? Well, whatever the excuse, there is just one thing to do, and that is to order food online from the McDelivery website or the McDelivery app! We are without a doubt one of the most popular fast-food restaurants in the country, satiating people’s hunger and cravings and bringing a smile on their faces. And we are proud to say that we have been at it since about 25 years now! Isn’t that something?
+        </p>
+        <p class="my-3">
+            When at McDonald’s, we have you covered with delicious items that are absolute value for money. Whether it is for breakfast, lunch, dinner or just a snack in-between your online meetings or classes, we have something for everyone, kids, and grown-ups alike. What’s not to love about that? The deliciousness that is the McDonald’s food menu has an incredibly wide variety of both vegetarian and non-vegetarian options, mouth-watering value meals and gourmet meals, burgers and wraps, choicest of desserts and beverages, all of which can match with any level of hunger pangs. So, bring it on!
+        </p>
+        <p class="my-3">
+            Dive into the McDonald's Indian Menu to tease your tastebuds and satiate that hunger! From The McSpicy Paneer burger to, Chicken Wrap from the McAloo Tikki Burger to the Gourmet Burger
+            <span><a href="#" class="underline decoration-yellow-700 text-yellow-700">Collections</a></span>, you are spoilt for choice. Looking for a hearty Indian breakfast option? Then try our perfectly seasoned McEgg Burger served with a side of buttered buns. Combine it with a cup of the McDonald’s McCafe and it’s a match made in heaven. One of the most popular items from our Indian menu is the ‘Shake Shake Fries’. The spicy piri piri seasoning combined with some good ol’ McDonald’s Fries is a definite must-have. The hot desi spices and flavours of the McDonald’s Indian Menu creates this symphony of deliciousness in your mouth leaving you craving for more. Order your meals online from the McDelivery website or app and satisfy your cravings for all things yummy.
+        </p>
+        <p class="my-3">
+            When McDonald’s first opened, we started with a simple menu of just burgers, fries and beverages. And after all these years, sometimes, our customers want just that - a good wholesome flavour-loaded burger. So, order your McDonald’s burger online and eat it like you mean it.
+        </p>
+        <p class="my-3">
+            Unlike many other food delivery websites, we at McDonalds’s have made ordering food online an experience that can be best described as - easy-peasy. Here’s how you go about it- select the food you crave, next step is to take your pick from the choice of add-ons, drink, side and dessert. Then add to cart, choose mode of payment and voila, you have placed your fast-food order online and your McDonald’s food is on its way! You can also track your order as it comes to you.
+        </p>
+        <p class="my-3">
+            Online food delivery is a whole new way to love McDonald’s. So, what are you waiting for? It’s McDonald’s o’clock! Order your meal now and allow us to do what we love doing - delivering happiness.
+        </p>
+    </div>
+
+    <!--5.QR AND APP SECTION-->
+    <div class="bg-yellow-500 h-72 w-full flex justify-evenly items-center max-sm:flex-col max-sm:h-[36rem] max-sm:space-y-10">
+        <div class="bg-white h-40 w-40 max-sm:h-20 max-sm:w-20">
+            <div>
+                <a href=""><img src="../images/qrcode.svg"></a>
+            </div>
+            <h1 class="text-white font-bold text-lg font-mono">CLICK ON QR CODE TO ENLARGE.</h1>
+        </div>
+        <div class="flex flex-col items-center">
+            <p class="text-red-700 font-bold text-xl font-mono">DISCOVER WITH US</p>
+            <p class="text-red-700 font-bold text-xl font-sans pl-5">Tell us about your experience.<br>Scan this QR code to discover more with us.</p>
+            <button class="bg-black text-white text-xl font-bold font-sans rounded-r-2xl rounded-l-2xl py-2 px-2 my-3 hover:bg-white hover:text-black">Downlode the app</button>
+        </div>
+    </div>
+
+    <!--6.FOOTER SECTION-->
+    <div class="bg-black w-full h-96 flex-col max-sm:py-2 py-5 justify-evenly">
+        <div class="flex max-sm:flex-col justify-center">
+            <div class="flex space-x-2 justify-evenly w-1/2">
+                <a href="" class="text-white">Privacy&nbsp;Policy</a>
+                <p class="text-white text-lg">|</p>
+                <a href="" class="text-white">Feedback</a>
+                <p class="text-white text-lg">|</p>
+                <a href="" class="text-white">Terms&Condition</a>
+            </div>
+            <div class="flex space-x-2 justify-evenly w-1/2">
+                <p class="text-white text-lg">|</p>
+                <a href="" class="text-white">Corporate&nbsp;Website</a>
+                <p class="text-white text-lg">|</p>
+                <a href="" class="text-white">Faq</a>
+                <p class="text-white text-lg">|</p>
+                <a href="" class="text-white">Bug&nbsp;Bounty</a>
+            </div>
+        </div>
+        <div class="flex max-sm:flex-col justify-center">
+            <div class="flex space-x-2 justify-evenly w-1/2">
+                <p class="text-white text-lg">|</p>
+                <a href="" class="text-white">Site&nbsp;Map</a>
+                <p class="text-white text-lg">|</p>
+                <a href="" class="text-white">Veg&nbsp;Burgers</a>
+                <p class="text-white text-lg">|</p>
+                <a href="" class="text-white">Non&nbsp;Veg&nbsp;Burgers</a>
+            </div>
+            <div class="flex space-x-2 justify-evenly w-1/2">
+                <p class="text-white text-lg">|</p>
+                <a href="" class="text-white">Nutrition&nbsp;Info</a>
+                <a href="" class="text-white">Party</a>
+                <p class="text-white text-lg">|</p>
+                <a href="" class="text-white">All Restaurants</a>
+            </div>
+        </div>
+        <div class="flex space-x-2 justify-evenly my-5">
+            <a href="#"><img src="../images/facebook.png" class="h-7 w-7"></a>
+            <a href="#"><img src="../images/instagram.png" class="h-7 w-7"></a>
+            <a href="#"><img src="../images/twitter.png" class="h-7 w-7"></a>
+        </div>
+        <div class="flex flex-col justify-center items-center">
+            <p class="text-white text-xs">An Average active adult requires 2,000 Kcal energy per day, however, calorie needs may vary.</p>
+            <p class="text-white">FSSAI Central License Number : 10014022002648</p>
+            <p class="text-white font-bold text-lg">Copyright  2024  H.R.P.L</p>
+        </div>
+    </div>
+    <!--FOR MOBILE SECTION APP MADE-->
+    <div class="lg:hidden">
+        <div class="bg-white h-14 w-full flex fixed bottom-0 justify-evenly items-center py-2">
+            <a href="#">
+                <div class="flex flex-col justify-evenly items-center">
+                    <img src="../images/home.png" alt="home" class="h-7 w-7">
+                    <p class="text-sm font-semibold">Home</p>
+                </div>
+            </a>
+            <a href="#">
+                <div class="flex flex-col justify-evenly items-center">
+                    <img src="../images/m.png" alt="home" class="h-6 w-6">
+                    <p class="text-sm font-semibold">Location</p>
+                </div>
+            </a>
+            <a href="#">
+                <div class="flex flex-col justify-evenly items-center">
+                    <img src="../images/cart.png" alt="home" class="h-7 w-7">
+                    <p class="text-sm font-semibold">cart</p>
+                </div>
+            </a>
+            <a href="#">
+                <div class="flex flex-col justify-evenly items-center">
+                    <img src="../images/profile.png" alt="home" class="h-7 w-7">
+                    <p class="text-sm font-semibold">profile</p>
+                </div>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
